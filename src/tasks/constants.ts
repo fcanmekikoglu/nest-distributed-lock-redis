@@ -2,7 +2,7 @@ import { UUID, randomInt, randomUUID } from 'crypto';
 
 export class Task {
   readonly id: UUID = randomUUID();
-  readonly ttl: number = randomInt(15000, 55000)
+  readonly wait: number = randomInt(15000, 50001)
   name: string;
 
   constructor(name: string) {
